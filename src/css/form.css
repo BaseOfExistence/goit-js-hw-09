@@ -22,7 +22,7 @@
     /* 150% */
     letter-spacing: 0.64px;
 }
-.email{
+.form-cont > label > input{
     display: block;
     border-radius: 4px;
     border: 1px solid #808080;
@@ -34,7 +34,7 @@
     line-height: 24px;
     height: 22px;
 }
-.message{
+.form-cont > label > textarea{
     display: block;
     border-radius: 4px;
     border: 1px solid #808080;
