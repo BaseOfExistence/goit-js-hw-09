@@ -9,4 +9,4 @@ import{S as c}from"./assets/vendor-c9def49e.js";(function(){const t=document.cre
       </a>
     </li>
     `},"");l.insertAdjacentHTML("beforeend",`${d}`);let r=new c(".gallery a",{captionDelay:250,captionsData:"alt"});r.on("show.simplelightbox",function(){});r.on("error.simplelightbox",function(i){console.log(i)});
-//# sourceMappingURL=commonHelpers2.js.map
+//# sourceMappingURL=commonHelpers.js.map
