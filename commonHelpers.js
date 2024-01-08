@@ -8,5 +8,5 @@ import{S as r}from"./assets/vendor-c9def49e.js";(function(){const t=document.cre
         />
       </a>
     </li>
-    `},"");s.insertAdjacentHTML("beforeend",`${l}`);new r(".gallery a",{captionDelay:250,captionsData:"alt"});
+    `},"");s.insertAdjacentHTML("beforeend",l);new r(".gallery a",{captionDelay:250,captionsData:"alt"});
 //# sourceMappingURL=commonHelpers.js.map
