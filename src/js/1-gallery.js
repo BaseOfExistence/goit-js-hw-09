@@ -1,4 +1,3 @@
-'use strict';
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 const images = [
@@ -66,7 +65,7 @@ const images = [
     description: "Lighthouse Coast Sea",
   },
 ];
-const gallery1 = document.querySelector(".gallery");
+const gallery = document.querySelector(".gallery");
 const html = images.reduce((acum, elem) => {
     const { preview, original, description } = elem;
     return acum += `
@@ -81,8 +80,8 @@ const html = images.reduce((acum, elem) => {
     </li>
     `
 }, "")
-gallery1.insertAdjacentHTML("beforeend", `${html}`);
-let gallery = new SimpleLightbox('.gallery a', {
+gallery.insertAdjacentHTML("beforeend", html);
+let lightbox = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
   captionsData: 'alt',
 });
