@@ -81,7 +81,7 @@ const html = images.reduce((acum, elem) => {
     `
 }, "")
 gallery.insertAdjacentHTML("beforeend", html);
-let lightbox = new SimpleLightbox('.gallery a', {
+const lightbox = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
   captionsData: 'alt',
 });
