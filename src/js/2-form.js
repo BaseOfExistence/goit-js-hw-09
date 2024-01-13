@@ -25,7 +25,7 @@ form.addEventListener("input", (event) => {
 })
 form.addEventListener("submit", (event) => {
     event.preventDefault();
-    if (email.value && email.value !== "" && message.value && message.value !== "") {
+    if (email.value.trim() && email.value.trim() !== "" && message.value.trim() && message.value.trim() !== "") {
     console.log(JSON.parse(localStorage.getItem("feedback-form-state")));
     email.value = "";
     message.value = "";
