@@ -26,9 +26,9 @@ form.addEventListener("input", (event) => {
 form.addEventListener("submit", (event) => {
     event.preventDefault();
     if (email.value.trim() && email.value !== "" && message.value.trim() && message.value !== "") {
-    console.log(JSON.parse(localStorage.getItem("feedback-form-state")));
-    email.value = "";
-    message.value = "";
-    localStorage.removeItem("feedback-form-state");
+        console.log(JSON.parse(localStorage.getItem("feedback-form-state")));
+        email.value = "";
+        message.value = "";
+        localStorage.removeItem("feedback-form-state");
     }
 });
