@@ -3,18 +3,18 @@ const email = document.querySelector('input[name="email"]');
 const message = document.querySelector('textarea[name="message"]');
 if (localStorage.getItem("feedback-form-state")) {
     const feedbackSave = JSON.parse(localStorage.getItem("feedback-form-state"));
-    if (feedbackSave.email && feedbackSave.email.trim() !== "") {
+    if (feedbackSave.email && feedbackSave.email !== "") {
         email.value = feedbackSave.email;
     }
-    if (feedbackSave.message && feedbackSave.message.trim() !== "") {
+    if (feedbackSave.message && feedbackSave.message !== "") {
         message.value = feedbackSave.message;
     }
 }
-const feedback = {
-    email: "",
-    message: ""
-}
 form.addEventListener("input", (event) => {
+    const feedback = {
+        email: "",
+        message: ""
+    }
     if (event.target.tagName.toLowerCase() === "input") {
         feedback.email = event.target.value.trim();
     }
@@ -25,7 +25,7 @@ form.addEventListener("input", (event) => {
 })
 form.addEventListener("submit", (event) => {
     event.preventDefault();
-    if (email.value.trim() && email.value.trim() !== "" && message.value.trim() && message.value.trim() !== "") {
+    if (email.value.trim() && email.value !== "" && message.value.trim() && message.value !== "") {
     console.log(JSON.parse(localStorage.getItem("feedback-form-state")));
     email.value = "";
     message.value = "";
